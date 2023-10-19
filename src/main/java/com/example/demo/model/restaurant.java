@@ -17,81 +17,27 @@ public class restaurant {
  
 	@Id
 	private Integer restaurantId;
-	private String namerestaurant;
-	private String detailrestaurant;
-	private String review;
+	private String  restaurantname;
+	private String  restaurantdetail;
 	
-	
-	public String getReview() {
-		return review;
-	}
-
-
-	public void setReview(String review) {
-		this.review = review;
-	}
-
-
-	/*@OneToMany(mappedBy = "restaurant")
-	private List<Review> reviews;*/
-	
-	
-	public restaurant() {
-		super();
-	}
-
-
-	public restaurant(Integer restaurantId, String namerestaurant, String pricerestaurant, String amountrestaurant,
-			String detailrestaurant) {
-		super();
-		this.restaurantId = restaurantId;
-		this.namerestaurant = namerestaurant;
-		this.detailrestaurant = detailrestaurant;
-	}
-
-
-	/*public restaurant(List<Review> reviews) {
-		super();
-		this.reviews = reviews;
-	}
-	public List<Review> getReviews() {
-		return reviews;
-	}
-	public void setReviews(List<Review> reviews) {
-		this.reviews = reviews;
-	}*/
-
-
-	public Integer getrestaurantId() {
+	public Integer getRestaurantId() {
 		return restaurantId;
 	}
-
-
-	public void setrestaurantId(Integer restaurantId) {
+	public void setRestaurantId(Integer restaurantId) {
 		this.restaurantId = restaurantId;
 	}
-
-
-	public String getNamerestaurant() {
-		return namerestaurant;
+	public String getRestaurantname() {
+		return restaurantname;
 	}
-
-
-	public void setNamerestaurant(String namerestaurant) {
-		this.namerestaurant = namerestaurant;
+	public void setRestaurantname(String restaurantname) {
+		this.restaurantname = restaurantname;
 	}
-
-
-	public String getDetailrestaurant() {
-		return detailrestaurant;
+	public String getRestaurantdetail() {
+		return restaurantdetail;
 	}
-
-
-	public void setDetailrestaurant(String detailrestaurant) {
-		this.detailrestaurant = detailrestaurant;
+	public void setRestaurantdetail(String restaurantdetail) {
+		this.restaurantdetail = restaurantdetail;
 	}
-	
-	
 	
 	
 }

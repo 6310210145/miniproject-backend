@@ -18,20 +18,21 @@ public class user {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	private Integer username;
+	private String username;
 	private String password;
 	private String firstname;
 	private String lastname;
+	
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Integer getUsername() {
+	public String getUsername() {
 		return username;
 	}
-	public void setUsername(Integer username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 	public String getPassword() {
@@ -52,6 +53,8 @@ public class user {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
+	
+	
 	
 		
 
